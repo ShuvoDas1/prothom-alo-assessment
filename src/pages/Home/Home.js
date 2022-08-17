@@ -62,7 +62,7 @@ const NewsList = ({ news }) => {
 };
 
 const Home = () => {
-  const [tab, setTab] = React.useState(0);
+  const [tab, setTab] = useState(0);
 
   const handleTabChange = (event, newValue) => {
     setTab(newValue);
@@ -166,13 +166,6 @@ const Home = () => {
 const TopNews = styled.div`
   height: 300px;
   width: 100%;
-  /* background-image: url(${(props) => props.img});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center; */
   position: relative;
 
   .top_news_img {
